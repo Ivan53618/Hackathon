@@ -1,2 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/novunku.css">
+</head>
+<header>
+    <nav>
+        <a href="golovna.html">🏰 Головна</a>
+        <a href="catalog.html">📦 Каталог</a>
+        <a href="discounts.html">🔥 Знижки</a>
+        <a href="novunku.html">✨ Новинки</a>
+        <a href="legenda.html">📖 Легенди</a> 
+      </nav>
+      <h1>Новинки</h1>
+      <button id="cart-btn">🛒 Корзина (<span id="cart-count">0</span>)</button>
+  <body>
+</header>
+<section class="controls">
+    <label>Сортувати:
+      <select id="sort">
+        <option value="default">За замовчуванням</option>
+        <option value="price-asc">Ціна ↑</option>
+        <option value="price-desc">Ціна ↓</option>
+      </select>
+    </label>
+  </section>
+  <main id="items-container"></main>
 
+  <div id="cart-modal" class="hidden">
+    <h2>🧺 Ваша корзина</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Разом: 0 золота</p>
+    <button onclick="closeCart()">Закрити</button>
+  </div>
 
+</body>
+<footer>
+  <p>© 2025 Магазин Артефактів | Створено в чарівному королівстві 🏰</p>
+  <p class="point">Контакт: <a class="a1" href="mailto:vanyapopchuk@gmail.com">vanyapopchuk@gmail.com</a></p>
+  </footer>
+<script src="novunku.js"></script>
+</html>
